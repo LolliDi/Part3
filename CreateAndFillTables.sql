@@ -2,27 +2,27 @@ USE PRODUCTSCATEGORY
 
 CREATE TABLE Category
 (
-ID INT PRIMARY KEY,
-Title NVARCHAR(500) NOT NULL
+  ID INT PRIMARY KEY,
+  Title NVARCHAR(500) NOT NULL
 );
 
 CREATE TABLE Products
 (
-ID INT PRIMARY KEY,
-Title NVARCHAR(500) NOT NULL
+  ID INT PRIMARY KEY,
+  Title NVARCHAR(500) NOT NULL
 );
 
 CREATE TABLE CategoryForProducts
 (
-ProductID INT NOT NULL,
-CategoryID INT NOT NULL
+  ProductID INT NOT NULL,
+  CategoryID INT NOT NULL
 );
 
 INSERT INTO Category
-VALUES (1,'Машины'), (2,'Химия'), (3,'Напитки'), (4,'Алкоголь');
+VALUES (1,'РњР°С€РёРЅС‹'), (2,'РҐРёРјРёСЏ'), (3,'РќР°РїРёС‚РєРё'), (4,'РђР»РєРѕРіРѕР»СЊ');
 
 INSERT INTO Products
-values (1,'Сок'), (2,'Медовуха Елаха'), (3,'Мистер Пропер'), (4,'Нива'), (5,'Черноголовка'), (6,'ГАЗ 31105'), (7,'Чипсы');
+values (1,'РЎРѕРє'), (2,'РњРµРґРѕРІСѓС…Р° Р•Р»Р°С…Р°'), (3,'РњРёСЃС‚РµСЂ РџСЂРѕРїРµСЂ'), (4,'РќРёРІР°'), (5,'Р§РµСЂРЅРѕРіРѕР»РѕРІРєР°'), (6,'Р“РђР— 31105'), (7,'Р§РёРїСЃС‹');
 
 INSERT INTO CategoryForProducts
 VALUES (1,3), (2,3), (2,4), (3,2), (4,1), (5,3), (6,1);
